@@ -28,3 +28,6 @@ public class Book {
 }
 
 ```
+
+  private final Map<Integer, Book> books = new HashMap<>();
+  private int nextId = 1;
