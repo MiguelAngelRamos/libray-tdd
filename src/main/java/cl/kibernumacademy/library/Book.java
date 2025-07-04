@@ -2,11 +2,12 @@ package cl.kibernumacademy.library;
 
 public class Book {
 
-  private final String title;
-  private final String author;
-  private final int year;
+  private final int id;
+  private String title, author;
+  private int year;
 
-  public Book(String title, String author, int year) {
+  public Book(int id, String title, String author, int year) {
+    this.id = id;
     this.title = title;
     this.author = author;
     this.year = year;
@@ -24,6 +25,17 @@ public class Book {
     return year;
   }
 
+  public void setTitle(String title) {
+    this.title = title;
+  }
 
-  
+  public void setAuthor(String author) {
+    this.author = author;
+  }
+
+  public void setYear(int year) {
+    this.year = year;
+  }
+
+
 }
